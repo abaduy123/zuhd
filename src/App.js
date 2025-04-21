@@ -3,9 +3,9 @@ import Nav from "./components/Nav.jsx"
 
 
 const products = [
-  { id: 1, name: "تحليل تصرفات عملائك لمدة اسبوع ", img:"week.png", p:"200 ريال" , l:"https://wa.me/966578932055/?text=شكرا لك لختيارك لنا اخترت الباقة الاسبوعية سيتم التواصل معك قريبا" },
-  { id: 3, name: "تحليل تصرفات عملائك لمدة شهر" , img:"month.png", p:"800 ريال", l:"https://wa.me/966578932055/?text=شكرا لك لختيارك لنا اخترت الباقة الشهرية سيتم التواصل معك قريبا"},
-  { id: 4, name: "تحليل تصرفات عملائك لمدة 3 اشهر",img:"3 months.png", p:"2000 ريال", l:"https://wa.me/966578932055/?text=شكرا لك لختيارك لنا اخترت باقة ال 3 اشهر سيتم التواصل معك قريبا" },
+  { id: 1, name: "تحليل تصرفات عملائك لمدة اسبوع ", img:"week.png", p:"300 ريال" , l:"https://wa.me/966578932055/?text=شكرا لك لختيارك لنا اخترت الباقة الاسبوعية سيتم التواصل معك قريبا" },
+  { id: 3, name: "تحليل تصرفات عملائك لمدة شهر" , img:"month.png", p:"1200 ريال", l:"https://wa.me/966578932055/?text=شكرا لك لختيارك لنا اخترت الباقة الشهرية سيتم التواصل معك قريبا"},
+  { id: 4, name: "تحليل تصرفات عملائك لمدة 3 اشهر",img:"3 months.png", p:"3600 ريال", l:"https://wa.me/966578932055/?text=شكرا لك لختيارك لنا اخترت باقة ال 3 اشهر سيتم التواصل معك قريبا" },
 ];
  
 export default function HomePage() { 
@@ -33,7 +33,7 @@ export default function HomePage() {
           <div key={product.id} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-4">
             <img className=" bg-gray-300 rounded mb-4 w-full" src={product.img}></img>
             <h2 className="text-xl mb-4 font-semibold text-[#5E17EB] text-right">{product.name}</h2>
-            <p className="text-gray-600 font-semibold text-right text-lg">{product.p}</p>
+            <p className="text-black font-semibold text-right text-lg">{product.p}</p>
             <a className="block text-center mt-4 bg-[#5E17EB] hover:bg-[#4d14c4] text-white w-full py-2 rounded " href={product.l}>
               اطلب الآن
             </a>
